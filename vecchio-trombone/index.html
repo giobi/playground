@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quanto sei Boomer?</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #f0f0f0;
+			}
+			.question {
+				background-color: white;
+				padding: 20px;
+				margin-bottom: 20px;
+				border-radius: 8px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+			label {
+				display: block;
+				margin: 10px 0;
+			}
+			button {
+				background-color: #4caf50;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 16px;
+			}
+			button:hover {
+				background-color: #45a049;
+			}
+			h1 {
+				color: #333;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Quanto sei Boomer?</h1>
+		<form id="boomerForm">
+			<div class="question">
+				<p>1. Come preferisci comunicare?</p>
+				<label> <input type="radio" name="q1" value="1" /> WhatsApp </label>
+				<label> <input type="radio" name="q1" value="2" /> Facebook </label>
+				<label> <input type="radio" name="q1" value="3" /> Telefono fisso </label>
+			</div>
+
+			<div class="question">
+				<p>2. Cosa fai quando il computer non funziona?</p>
+				<label> <input type="radio" name="q2" value="1" /> Cerco su Google </label>
+				<label> <input type="radio" name="q2" value="2" /> Chiamo il nipote </label>
+				<label> <input type="radio" name="q2" value="3" /> Spegno e riaccendo </label>
+			</div>
+
+			<div class="question">
+				<p>3. Come preferisci fare acquisti?</p>
+				<label> <input type="radio" name="q3" value="1" /> Online con carta </label>
+				<label> <input type="radio" name="q3" value="2" /> Contanti in negozio </label>
+				<label> <input type="radio" name="q3" value="3" /> Assegno </label>
+			</div>
+
+			<button type="submit">Scopri quanto sei Boomer!</button>
+		</form>
+
+		<script>
+			document.getElementById("boomerForm").addEventListener("submit", function (e) {
+				e.preventDefault();
+				alert("Vecchio trombone!");
+			});
+		</script>
+	</body>
+</html>
